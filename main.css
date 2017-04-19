@@ -4,9 +4,14 @@
 }
 
 .row {
-	height: 100px;
+	height: 200px;
 }
 
 .top-row {
 	border-bottom: 1px solid black; 
 }
+
+.middle-row {
+	border-bottom: 1px solid black;
+}
+
