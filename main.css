@@ -15,3 +15,11 @@
 	border-bottom: 1px solid black;
 }
 
+.col-border:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	border-left: 1px solid black;
+}
+
