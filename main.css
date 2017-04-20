@@ -5,6 +5,7 @@
 	margin-bottom: 100px;  
 }
 
+/*CSS code for creating a column in bootstrap with borders
 .row {
 	height: 200px;
 }
@@ -21,15 +22,15 @@
 	position: relative;
 }
 
-/*not much difference between before and after*/
+//not much difference between before and after
 .col-border:before {
 
 	content: '';
 	position: absolute;
-	/* top and bottom are used in conjunction with position */
-	/* means it will stretch to the top and bottom of any page with absolute positioning */
+	// top and bottom are used in conjunction with position 
+	// means it will stretch to the top and bottom of any page with absolute positioning 
 	top: 0;
 	bottom: 0;
 	border-left: 1px solid black;
 }
-
+*/
