@@ -5,10 +5,13 @@
 
 	function startGame(){
 		document.turn = "X";
+
+		setMessage(document.turn + " gets to start.");
+
 	}
 
 	//function for setting message
 
 	function setMessage(msg){
-		document.getElementById("message")
+		document.getElementById("message").innerText = msg;
 	}
