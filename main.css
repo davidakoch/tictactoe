@@ -1,8 +1,17 @@
 .container {
-	width: 75%;
-	margin: 0 auto;
 	margin-top: 100px; 
 	margin-bottom: 100px;  
+}
+
+.table {
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+table, tr, td {
+	border: 1px solid black;
 }
 
 /*CSS code for creating a column in bootstrap with borders
