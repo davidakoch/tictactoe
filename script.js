@@ -11,7 +11,7 @@
 	function startGame(){
 		document.turn = "X";
 
-		setMessage(document.turn + " gets to start.");
+		setMessage(document.turn + " will start.");
 
 	}
 
