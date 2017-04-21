@@ -1,5 +1,10 @@
 //what you can do is review it with pure javascript
 	//then rewrite it with jquery
+		//make sure to get it review through code camp
+
+
+//definitely need to add document on ready when you are dealing with jquery 
+
 
 	//keep track on who is playing
 
@@ -13,5 +18,6 @@
 	//function for setting message
 
 	function setMessage(msg){
+		//this definitely takes a jquery function...maybe value or html
 		document.getElementById("message").innerText = msg;
 	}
