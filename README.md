@@ -1,1 +1,1 @@
-Please note that the tictactoe code includes some experimental code that I tried including a successful attempt to add columns borders with Bootstrap. This is a tictactoe game that does not use a table but instead uses a bootstrap column setting. 
+The html and css includes some experimental code used to successfully add columns borders with Bootstrap. I blocked that code out and then went to create my tictactoe board with a table format. 
