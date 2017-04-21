@@ -19,6 +19,10 @@ h1 {
 	margin: 0 auto;
 }
 
+#bootstrap-overrides td {
+	border: 1px solid black;
+}
+
 
 
 /*CSS code for creating a column in bootstrap with borders
