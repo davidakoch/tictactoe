@@ -1,3 +1,7 @@
+body {
+	font-size: 30px; 
+}
+
 .container {
 	margin-top: 100px; 
 	margin-bottom: 100px;  
@@ -10,9 +14,7 @@
 	margin: 0 auto;
 }
 
-table, tr, td {
-	border: 1px solid black;
-}
+
 
 /*CSS code for creating a column in bootstrap with borders
 .row {
