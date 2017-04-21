@@ -6,3 +6,9 @@
 	function startGame(){
 		document.turn = "X";
 	}
+
+	//function for setting message
+
+	function setMessage(msg){
+		document.getElementById("message")
+	}
