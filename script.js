@@ -21,3 +21,10 @@
 		//this definitely takes a jquery function...maybe value or html
 		document.getElementById("message").innerText = msg;
 	}
+
+	function nextMove(){
+		//an if else statement
+
+		document.set inner html as X
+			then next inner html is O
+	}
