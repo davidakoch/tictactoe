@@ -22,9 +22,15 @@
 		document.getElementById("message").innerText = msg;
 	}
 
-	function nextMove(){
+	//i think you can use jquery toggle for this...
+	function nextMove(square){
+		document.innerText = document.turn;
+
 		//an if else statement
+		if(square === "x"){
+			
+		}
 
 		document.set inner html as X
 			then next inner html is O
-	}
+	}*/
