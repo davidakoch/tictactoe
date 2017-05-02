@@ -3,26 +3,29 @@ body {
 	font-weight: bold; 
 }
 
-.container {
-	margin-top: 100px; 
-	margin-bottom: 100px;  
-}
-
 h1 {
 	text-align: center;
-	padding-bottom: 25px; 
+	padding-bottom: 25px;
 }
 
 #message {
 	padding-bottom: 15px; 
+	text-align: center;
+	padding-bottom: 25px; 
 }
 
 .table {
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 350px;
 	text-align: center;
 	margin: 0 auto;
 	border: 1px solid black;
+}
+
+td {
+	border: 1px solid black; 
+	width: 33.33%;
+	height: 33.33%;
 }
 
 
