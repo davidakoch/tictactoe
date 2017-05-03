@@ -30,9 +30,10 @@
 
 	function switchTurn(){
 		if(document.turn == "X"){
-			document.turn = "O"
+			document.turn = "O"; 
 		} else {
-			document.turn = "X"
+			document.turn = "X"; 
 		}
 		
+		setMessage("It's " + document.turn + "'s turn");
 	}
