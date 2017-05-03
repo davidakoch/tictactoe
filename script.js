@@ -24,9 +24,12 @@
 
 	//i think you can use jquery toggle for this...
 	function nextMove(square){
-		square.innerText = document.turn;
-		switchTurn();
-	}
+		if(square.innerText = ""){
+			square.innerText = document.turn;
+			switchTurn();
+		} else {
+			setMessage("That Square is Already Used.")
+		}
 
 	function switchTurn(){
 		if(document.turn == "X"){
