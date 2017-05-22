@@ -47,3 +47,5 @@
 	}
 
 	function getBox(number)
+		document.getElementById("s" + number)
+	}
