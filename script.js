@@ -41,3 +41,5 @@
 		
 		setMessage("It's " + document.turn + "'s turn");
 	}
+
+	function winGame
