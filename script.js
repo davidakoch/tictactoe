@@ -42,4 +42,8 @@
 		setMessage("It's " + document.turn + "'s turn");
 	}
 
-	function winGame
+	function checkRow(a, b, c, move){
+		var result;
+	}
+
+	function getBox(number)
