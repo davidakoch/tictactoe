@@ -42,6 +42,11 @@
 		setMessage("It's " + document.turn + "'s turn");
 	}
 
+	function checkForWinner(move) {
+		var result = false;
+		if(checkRow(1, 2, 3, move) || (checkRow(1))
+	}
+
 	function checkRow(a, b, c, move){
 		var result = false;
 		if(getBox(a) == move && getBox(b) == move && getBox(c) == move) {
