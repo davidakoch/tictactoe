@@ -43,7 +43,11 @@
 	}
 
 	function checkRow(a, b, c, move){
-		var result;
+		var result = false;
+		if(getBox(a) == move && getBox(b) == move && getBox(c) == move) {
+			result = true
+		}
+		return result;
 	}
 
 	function getBox(number)
