@@ -33,6 +33,9 @@
 	}	
 
 	function switchTurn(){
+		if(checkForWinner(document.turn)) {
+			setMessage("Congratulations, " + document.turn + "! You've won!")
+		}
 		if(document.turn == "X"){
 			document.turn = "O"; 
 		} else {
