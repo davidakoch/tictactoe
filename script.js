@@ -25,10 +25,9 @@
 
 	//i think you can use jquery toggle for this...
 	function nextMove(square){
-		if(document.winner == null){
+		if(document.winner != null){
 			setMessage(document.winner + " already won the game.");
-		}
-		if(square.innerText == ""){
+		} else if(square.innerText == ""){
 			square.innerText = document.turn;
 			switchTurn();
 		} else {
