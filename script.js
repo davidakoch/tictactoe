@@ -38,11 +38,11 @@
 		}
 		if(document.turn == "X"){
 			document.turn = "O"; 
+			setMessage("It's " + document.turn + "'s turn");
 		} else {
 			document.turn = "X"; 
+			setMessage("It's " + document.turn + "'s turn");
 		}
-		
-		setMessage("It's " + document.turn + "'s turn");
 	}
 
 	function checkForWinner(move) {
