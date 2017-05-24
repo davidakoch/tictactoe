@@ -10,6 +10,7 @@
 
 	function startGame(){
 		document.turn = "X";
+		document.winner = null;
 
 		setMessage(document.turn + " will start.");
 
@@ -24,6 +25,9 @@
 
 	//i think you can use jquery toggle for this...
 	function nextMove(square){
+		if(document.winner == null){
+			setMessage(document.winner + " already won the game.");
+		}
 		if(square.innerText == ""){
 			square.innerText = document.turn;
 			switchTurn();
