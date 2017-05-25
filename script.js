@@ -9,6 +9,11 @@
 	//keep track on who is playing
 
 	function startGame(){
+
+		for(var i = 1; i<=9; i++){
+			clearBox(i);
+		}
+
 		document.turn = "X";
 		if (Math.random() < 0.5){
 			document.turn = "O";
@@ -79,4 +84,6 @@
 		return document.getElementById("s" + number).innerText;
 	}
 
-	function clearBox
+	function clearBox(number){
+		document.getElementById("s" + number).innerText = "";
+	}
