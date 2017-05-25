@@ -78,3 +78,5 @@
 		//definitely a jquery method such as val or html
 		return document.getElementById("s" + number).innerText;
 	}
+
+	function clearBox
