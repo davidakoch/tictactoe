@@ -13,8 +13,30 @@ function startGame(){
 
 	$('#message').text(document.turn + ' will start.')
 
-	
+	//add the way to actually play the game here
 
+	document.winner = null;
+
+	//next you have to be able to add x's and o's 
+
+	$('.square').click(function(){
+		//square.innerText == document.turn
+		//console.log("hello")
+		('.square').html("<p>hello</p>")
+	})
+
+/*
+		//i think you can use jquery toggle for this...
+		/*function nextMove(square){
+			if(document.winner != null){
+				setMessage(document.winner + " already won the game.");
+			} else if(square.innerText == ""){
+				square.innerText = document.turn;
+				switchTurn();
+			} else {
+				setMessage("That Square is Already Used.")
+			}
+		}*/	
 
 	
 
@@ -24,13 +46,13 @@ function startGame(){
 				clearBox(i);
 			}
 
-			document.turn = "X";
+			/*document.turn = "X";
 			if (Math.random() < 0.5){
 				document.turn = "O";
-			} 
+			}
 			document.winner = null;
 
-			setMessage(document.turn + " will start.");
+			/*setMessage(document.turn + " will start.");
 
 		}
 
