@@ -8,7 +8,7 @@
 
 </head>
 	<!--body online will get replaced with jquery document on ready-->
-<body onload = "startGame();">
+<body>
 	<!--code for creating a bootstrap column
 	<div class="container row-relative">
 		<div class="row top-row">
@@ -38,27 +38,26 @@
 	<table class = "table">
 		<tr>
 			<!--with jquery you'll add a click event-->
-			<td id="s1" class="square" onclick="nextMove(this);"></td>
-			<td id="s2" class="square" onclick="nextMove(this);"></td>
-			<td id="s3" class="square" onclick="nextMove(this);"></td>
+			<td id="s1" class="square"></td>
+			<td id="s2" class="square"></td>
+			<td id="s3" class="square"></td>
 		</tr>
 		<tr>
-			<td id="s4" class="square" onclick="nextMove(this);"></td>
-			<td id="s5" class="square" onclick="nextMove(this);"></td>
-			<td id="s6" class="square" onclick="nextMove(this);"></td>	
+			<td id="s4" class="square"></td>
+			<td id="s5" class="square"></td>
+			<td id="s6" class="square"></td>	
 		</tr>
 		<tr>
-			<td id="s7" class="square" onclick="nextMove(this);"></td>
-			<td id="s8" class="square" onclick="nextMove(this);"></td>
-			<td id="s9" class="square" onclick="nextMove(this);"></td>	
+			<td id="s7" class="square"></td>
+			<td id="s8" class="square"></td>
+			<td id="s9" class="square"></td>	
 		</tr>
 	</table>
 	<!--this you can definitely clear with jQuery-->
 	<button><a href="javascript:startGame();">Start Over</a></button>
-</div>	
-
-
-
 </body>
-	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<script src="script2.js"></script>
 </html>
