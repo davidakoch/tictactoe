@@ -5,7 +5,16 @@
 
 function startGame(){
 
-	$('#message').text('X will start.')
+	document.turn = "X";
+
+	if (Math.random() < 0.5){
+		document.turn = "O";
+	} 
+
+	$('#message').text(document.turn + ' will start.')
+
+	
+
 
 	
 
