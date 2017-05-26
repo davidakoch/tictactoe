@@ -1,17 +1,17 @@
-//what you can do is review it with pure javascript
-	//then rewrite it with jquery
-		//make sure to get it review through code camp
 
 
-//definitely need to add document on ready when you are dealing with jquery 
+//keep track on who is playing
 
 
-	//keep track on who is playing
-$(document).ready(function(){
+function startGame(){
 
-		function startGame(){
+	$('#message').text('X will start.')
 
-			for(var i = 1; i<=9; i++){
+	
+
+}
+
+			/*for(var i = 1; i<=9; i++){
 				clearBox(i);
 			}
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
 
 		function setMessage(msg){
 			//this definitely takes a jquery function...maybe value or html
+			(#message).html(msg)
 			document.getElementById("message").innerText = msg;
 		}
 
@@ -87,5 +88,14 @@ $(document).ready(function(){
 
 		function clearBox(number){
 			document.getElementById("s" + number).innerText = "";
-		}
+		}*/
+
+
+
+
+
+$(document).ready(function(){
+
+	startGame();
+
 });
