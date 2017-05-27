@@ -20,8 +20,10 @@ function startGame(){
 	//next you have to be able to add x's and o's 
 	function switchTurn(){
 		if(document.turn == "X"){
+			$('#message').text("It's " + document.turn + "'s turn");
 			document.turn = "O"; 
 		} else {
+			$('#message').text("It's " + document.turn + "'s turn");
 			document.turn = "X"; 
 		}
 	}
