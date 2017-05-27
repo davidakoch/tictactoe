@@ -1,8 +1,4 @@
 
-
-//keep track on who is playing
-
-
 function startGame(){
 
 	document.turn = "X";
@@ -13,11 +9,8 @@ function startGame(){
 
 	$('#message').text(document.turn + ' will start.')
 
-	//add the way to actually play the game here
-
 	document.winner = null;
 
-	//next you have to be able to add x's and o's 
 	function switchTurn(){
 		if(document.turn == "X"){
 			$('#message').text("It's " + document.turn + "'s turn");
@@ -33,6 +26,10 @@ function startGame(){
 		switchTurn(); 
 		$(this).html(document.turn);
 	})
+
+	//i think my next move is to get console.log if there are three in a row
+
+
 
 /*
 		//i think you can use jquery toggle for this...
