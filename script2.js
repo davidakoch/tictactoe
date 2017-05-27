@@ -20,9 +20,8 @@ function startGame(){
 	//next you have to be able to add x's and o's 
 
 	$('.square').click(function(){
-		//square.innerText == document.turn
-		//console.log("hello")
-		('.square').html("<p>hello</p>")
+		//if figured it out witt the this function 
+		$(this).html(document.turn);
 	})
 
 /*
