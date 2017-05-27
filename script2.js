@@ -19,6 +19,12 @@ function startGame(){
 
 	//next you have to be able to add x's and o's 
 
+	if(document.turn == "X"){
+		document.turn = "O"; 
+	} else {
+		document.turn = "X"; 
+	}
+
 	$('.square').click(function(){
 		//if figured it out witt the this function 
 		$(this).html(document.turn);
