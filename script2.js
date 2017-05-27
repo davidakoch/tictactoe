@@ -18,15 +18,17 @@ function startGame(){
 	document.winner = null;
 
 	//next you have to be able to add x's and o's 
-
-	if(document.turn == "X"){
-		document.turn = "O"; 
-	} else {
-		document.turn = "X"; 
+	function switchTurn(){
+		if(document.turn == "X"){
+			document.turn = "O"; 
+		} else {
+			document.turn = "X"; 
+		}
 	}
 
 	$('.square').click(function(){
-		//if figured it out witt the this function 
+		//if figured it out witt the this function
+		switchTurn(); 
 		$(this).html(document.turn);
 	})
 
