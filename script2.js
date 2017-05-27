@@ -15,7 +15,7 @@ function startGame(){
 		if(checkForWinner(document.turn)) {
 			$('#message').text("Congratulations, " + document.turn + "! You've won!")
 			document.winner = document.turn;
-		if(document.turn == "X"){
+		} else if(document.turn == "X"){
 			$('#message').text("It's " + document.turn + "'s turn");
 			document.turn = "O"; 
 		} else {
@@ -26,7 +26,7 @@ function startGame(){
 
 	$('.square').click(function(){
 		switchTurn(); 
-		$(this).html(document.turn);
+		$(this).text(document.turn);
 	})
 
 	function checkForWinner(move) {
@@ -51,6 +51,13 @@ function startGame(){
 		}
 		return result;
 	}
+
+	//change getBox to return the innertext of a specific square
+		function getBox(numbers){
+			var numbers = $('#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9')
+			//defini
+			return $(numbers).val();
+		}
 }
 
 			/*for(var i = 1; i<=9; i++){
