@@ -1,4 +1,4 @@
-
+//you have to work on get box function
 function startGame(){
 
 	document.turn = "X";
@@ -12,6 +12,9 @@ function startGame(){
 	document.winner = null;
 
 	function switchTurn(){
+		if(checkForWinner(document.turn)) {
+			$('#message').text("Congratulations, " + document.turn + "! You've won!")
+			document.winner = document.turn;
 		if(document.turn == "X"){
 			$('#message').text("It's " + document.turn + "'s turn");
 			document.turn = "O"; 
@@ -22,30 +25,32 @@ function startGame(){
 	}
 
 	$('.square').click(function(){
-		//if figured it out witt the this function
 		switchTurn(); 
 		$(this).html(document.turn);
 	})
 
-	//i think my next move is to get console.log if there are three in a row
-
-
-
-/*
-		//i think you can use jquery toggle for this...
-		/*function nextMove(square){
-			if(document.winner != null){
-				setMessage(document.winner + " already won the game.");
-			} else if(square.innerText == ""){
-				square.innerText = document.turn;
-				switchTurn();
-			} else {
-				setMessage("That Square is Already Used.")
+	function checkForWinner(move) {
+		var result = false;
+			if(checkRow(1, 2, 3, move) || 
+			   checkRow(4, 5, 6, move) || 
+			   checkRow(7, 8, 9, move) || 
+			   checkRow(1, 4, 7, move) || 
+			   checkRow(2, 5, 8, move) || 
+			   checkRow(3, 6, 9, move) ||
+			   checkRow(1, 5, 9, move) || 
+			   checkRow(3, 5, 7, move)){
+				result = true;
 			}
-		}*/	
+		return result;
+	}
 
-	
-
+	function checkRow(a, b, c, move){
+		var result = false;
+		if(getBox(a) == move && getBox(b) == move && getBox(c) == move) {
+			result = true
+		}
+		return result;
+	}
 }
 
 			/*for(var i = 1; i<=9; i++){
