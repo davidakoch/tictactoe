@@ -24,6 +24,7 @@ function startGame(){
 		}
 	}
 
+
 	$('.square').click(function(){
 		switchTurn(); 
 		$(this).text(document.turn);
@@ -31,8 +32,8 @@ function startGame(){
 
 	function checkForWinner(move) {
 		var result = false;
-			if(checkRow(1, 2, 3, move) || 
-			   checkRow(4, 5, 6, move) || 
+			if(checkRow(s1, s2, s3, move) || 
+			   checkRow(s4, s5, s6, move) || 
 			   checkRow(7, 8, 9, move) || 
 			   checkRow(1, 4, 7, move) || 
 			   checkRow(2, 5, 8, move) || 
@@ -51,12 +52,12 @@ function startGame(){
 		}
 		return result;
 	}
-
 	//change getBox to return the innertext of a specific square
 		function getBox(numbers){
 			var numbers = $('#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9')
 			//defini
-			return $(numbers).val();
+
+			console.log(numbers.text());
 		}
 }
 
@@ -130,10 +131,12 @@ function startGame(){
 			return result;
 		}
 
-		function getBox(number){
-			//definitely a jquery method such as val or html
-			return document.getElementById("s" + number).innerText;
-		}
+			function getBox(number){
+		//definitely a jquery method such as val or html
+		return document.getElementById("s" + number).innerText;
+	}
+
+
 
 		function clearBox(number){
 			document.getElementById("s" + number).innerText = "";
