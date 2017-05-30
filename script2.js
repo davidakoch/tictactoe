@@ -1,21 +1,20 @@
 //you have to work on get box function
 function startGame(){
 
-	document.turn = "X";
+	//document.turn = "X";
 
 	if (Math.random() < 0.5){
 		document.turn = "O";
-	} 
+	}  else {
+		document.turn = "X"
+	}
 
 	$('#message').text(document.turn + ' will start.')
 
 	document.winner = null;
 
 	function switchTurn(){
-		if(checkForWinner(document.turn)) {
-			$('#message').text("Congratulations, " + document.turn + "! You've won!")
-			document.winner = document.turn;
-		} else if(document.turn == "X"){
+		if(document.turn == "X"){
 			$('#message').text("It's " + document.turn + "'s turn");
 			document.turn = "O"; 
 		} else {
@@ -30,10 +29,13 @@ function startGame(){
 		$(this).text(document.turn);
 	})
 
-	function checkForWinner(move) {
-		var result = false;
-			if(checkRow(s1, s2, s3, move) || 
-			   checkRow(s4, s5, s6, move) || 
+	$('.square').click(function(){
+			if ($('#s1' && '#s2' && '#s3').text() == "X" || "O"){
+				console.log("hello")
+			}
+	});
+/*} 3, move) || 
+			   checkRow(4, 5, 6, move) || 
 			   checkRow(7, 8, 9, move) || 
 			   checkRow(1, 4, 7, move) || 
 			   checkRow(2, 5, 8, move) || 
@@ -42,23 +44,12 @@ function startGame(){
 			   checkRow(3, 5, 7, move)){
 				result = true;
 			}
-		return result;
-	}
+			return result;
+		}*/
+			
 
-	function checkRow(a, b, c, move){
-		var result = false;
-		if(getBox(a) == move && getBox(b) == move && getBox(c) == move) {
-			result = true
-		}
-		return result;
-	}
-	//change getBox to return the innertext of a specific square
-		function getBox(numbers){
-			var numbers = $('#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9')
-			//defini
-
-			console.log(numbers.text());
-		}
+			
+		
 }
 
 			/*for(var i = 1; i<=9; i++){
