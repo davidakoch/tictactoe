@@ -34,27 +34,32 @@ function startGame(){
 
 	$('.square').click(function(){
 
-		var xo = ["X", "O"]
 	
 			if ($('#s1' && '#s2' && '#s3').text() === "X"){
 				console.log("hello")
 				$('#message').text("Congratulations, X! You've won!")
 			} else if ($('#s1' && '#s2' && '#s3').text() === "O"){
 				console.log("Goodbye")
-				$('#message').text("Congratulations, X! You've won!")
+				$('#message').text("Congratulations, O! You've won!")
 			} else if ($('#s4' && '#s5' && '#s6').text() === "X"){
 				console.log("Goodbye")
 				$('#message').text("Congratulations, X! You've won!")
 			} else if ($('#s4' && '#s5' && '#s6').text() === "O"){
 				console.log("Goodbye")
-				$('#message').text("Congratulations, X! You've won!")
+				$('#message').text("Congratulations, O! You've won!")
 			} else if ($('#s7' && '#s8' && '#s9').text() === "X"){
 				console.log("Goodbye")
 				$('#message').text("Congratulations, X! You've won!")
 			} else if ($('#s7' && '#s8' && '#s9').text() === "O"){
 				console.log("Goodbye")
+				$('#message').text("Congratulations, O! You've won!")
+			} else if ($('#s1' && '#s5' && '#s9').text() === "X"){
+				console.log("Goodbye")
 				$('#message').text("Congratulations, X! You've won!")
-			}		
+			} else if ($('#s1' && '#s5' && '#s9').text() === "O"){
+				console.log("Goodbye")
+				$('#message').text("Congratulations, O! You've won!")
+			}			
 	});
 /*} 3, move) || 
 			   checkRow(4, 5, 6, move) || 
