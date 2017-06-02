@@ -42,7 +42,13 @@ function startGame(){
 			} else if ($('#s1' && '#s2' && '#s3').text() === "O"){
 				console.log("Goodbye")
 				$('#message').text("Congratulations, X! You've won!")
-			}
+			} else if ($('#s4' && '#s5' && '#s6').text() === "X"){
+				console.log("Goodbye")
+				$('#message').text("Congratulations, X! You've won!")
+			} else if ($('#s4' && '#s5' && '#s6').text() === "O"){
+				console.log("Goodbye")
+				$('#message').text("Congratulations, X! You've won!")
+
 	});
 /*} 3, move) || 
 			   checkRow(4, 5, 6, move) || 
