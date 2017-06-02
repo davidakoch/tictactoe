@@ -30,8 +30,15 @@ function startGame(){
 	})
 
 	$('.square').click(function(){
-			if ($('#s1' && '#s2' && '#s3').text() == "X" || "O"){
+
+		var xo = ["X", "O"]
+	
+			if ($('#s1' && '#s2' && '#s3').text() === "X"){
 				console.log("hello")
+				$('#message').text("Congratulations, X! You've won!")
+			} else if ($('#s1' && '#s2' && '#s3').text() === "O"){
+				console.log("Goodbye")
+				$('#message').text("Congratulations, X! You've won!")
 			}
 	});
 /*} 3, move) || 
