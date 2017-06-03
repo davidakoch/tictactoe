@@ -28,14 +28,44 @@ function startGame(){
 
 
 	$('.square').click(function(){
+		//i believe you would add the checkifplayerwon function here
+		//use the text from 
 		$(this).text(document.turn);
 		switchTurn(); 
 	})
 
-	$('.square').click(function(){
+
+
+
+	function checkIfPlayerWon(symbol){
+		//change to text
+
+			if($('#s1').text(symbol) && $('#s2').text(symbol) && $('#s3').text(symbol)){
+				return true;
+			} else if ($('#s4').text(symbol) && $('#s5').text(symbol) && $('#s6').text(symbol)) {
+				return true; 
+			} else if ($('#s7').text(symbol) && $('#s8').text(symbol) && $('#s9').text(symbol)) {
+				return true; 
+			} else if($('#s1').text(symbol) && $('#s4').text(symbol) && $('#s7').text(symbol)){
+				return true;
+			} else if ($('#s2').text(symbol) && $('#s5').text(symbol) && $('#s8').text(symbol)) {
+				return true; 
+			} else if ($('#s3').text(symbol) && $('#s6').text(symbol) && $('#s9').text(symbol)) {
+				return true; 
+			}	else if ($('#s1').text(symbol) && $('#s5').text(symbol) && $('#s9').text(symbol)) {
+				return true; 
+			} else if ($('#s3').text(symbol) && $('#s5').text(symbol) && $('#s7').text(symbol)) {
+				return true; 
+			} else {
+				return false; 
+			}
+		}	
 
 	
-			if ($('#s1').text() && $('#s2').text() && $('#s3').text() === "X"){
+
+
+	
+			/*if ($('#s1').text() && $('#s2').text() && $('#s3').text() === "X"){
 				$('#message').text("Congratulations, X! You've won!")
 			} else if ($('#s1').text() && $('#s2').text() && $('#s3').text() === "O"){
 				$('#message').text("Congratulations, O! You've won!")
@@ -52,7 +82,7 @@ function startGame(){
 			} else if ($('#s7').text() && $('#s8').text() && $('#s9').text() === "O"){
 				$('#message').text("Congratulations, O! You've won!")
 			}
-	})
+	})*/
 }
 
 
