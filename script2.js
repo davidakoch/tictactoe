@@ -28,10 +28,12 @@ function startGame(){
 
 
 	$('.square').click(function(){
-		//i believe you would add the checkifplayerwon function here
-		//use the text from 
-		$(this).text(document.turn);
-		switchTurn(); 
+		if(checkIfPlayerWon('X')){
+			$('#message').text("Congratulations, X! You've won!")
+		} else if (checkIfPlayerWon('Y')){
+			$('#message').text("Congratulations, O! You've won!")
+		} else ($(this).text(document.turn))
+			switchTurn(); 
 	})
 
 
