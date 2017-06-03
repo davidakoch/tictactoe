@@ -46,30 +46,30 @@ function startGame(){
 			} else if ($('#s4').text() && $('#s5').text() && $('#s6').text() === "O"){
 				$('#message').text("Congratulations, O! You've won!")
 			}
+
+			if ($('#s7').text() && $('#s8').text() && $('#s9').text() === "X"){
+				$('#message').text("Congratulations, X! You've won!")
+			} else if ($('#s7').text() && $('#s8').text() && $('#s9').text() === "O"){
+				$('#message').text("Congratulations, O! You've won!")
+			}
+
+			///i think you need to do columns first...then try it out
+
 /*
-			 if ($('#s7' && '#s8' && '#s9').text() === "X"){
-				console.log("Goodbye")
-				$('#message').text("Congratulations, X! You've won!")
-			} else if ($('#s7' && '#s8' && '#s9').text() === "O"){
-				console.log("Goodbye")
-				$('#message').text("Congratulations, O! You've won!")
-			} 
 
-			if ($('#s1' && '#s5' && '#s9').text() === "X"){
-				console.log("Goodbye")
+			if ($('#s1').text() && $('#s5').text() && $('#s9').text() === "X"){
 				$('#message').text("Congratulations, X! You've won!")
-			} else if ($('#s1' && '#s5' && '#s9').text() === "O"){
-				console.log("Goodbye")
+			} else if ($('#s1').text() && $('#s5').text() && $('#s9').text() === "O"){
 				$('#message').text("Congratulations, O! You've won!")
-			} 
+			}
 
-			if ($('#s3' && '#s5' && '#s7').text() === "X"){
-				console.log("Goodbye")
+			if ($('#s3').text() && $('#s5').text() && $('#s7').text() === "X"){
 				$('#message').text("Congratulations, X! You've won!")
-			} else if ($('#s3' && '#s5' && '#s7').text() === "O"){
-				console.log("Goodbye")
+			} else if ($('#s3').text() && $('#s5').text() && $('#s7').text() === "O"){
 				$('#message').text("Congratulations, O! You've won!")
-			}*/						
+			}
+
+				
 	})
 /*} 3, move) || 
 			   checkRow(4, 5, 6, move) || 
