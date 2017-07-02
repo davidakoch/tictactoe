@@ -6,19 +6,19 @@ $(document).ready(function(){
 		var squareSelected = $(this);
 
 		if(squareSelected.hasClass('X') || squareSelected.hasClass('O')) {
-			alert("This square has already been selected")
+			$('#message').text("This square has already been selected")
 		} else {
 			if(player === 1 ){
 				squareSelected.addClass('X');
 				if(checkIfPlayerWon('X')){
-					alert('Congrats! Player ' + player + ' has won!')
+					$('#message').text('Congrats! Player ' + player + ' has won!')
 				} else {
 				player = 2;
 				}
 			} else {
 				squareSelected.addClass('O')
 				if(checkIfPlayerWon('O')){
-					alert('Congrats! Player ' + player + ' has won!')
+					$('#message').text('Congrats! Player ' + player + ' has won!')
 				} else {
 				player = 1;
 				}

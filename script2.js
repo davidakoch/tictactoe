@@ -11,31 +11,57 @@ function startGame(){
 
 	$('#message').text(document.turn + ' will start.')
 
-	document.winner = null;
+	
 
-	function switchTurn(){
-		if(document.turn == "X"){
-			document.turn = "O"; 
-			$('#message').text("It's " + document.turn + "'s turn");
-			
-		} else if (document.turn = "O"){
-			document.turn = "X"; 
-			$('#message').text("It's " + document.turn + "'s turn");
-			
-		}
-	}
+
 
 
 
 	$('.square').click(function(){
-		if(checkIfPlayerWon('X')){
-			$('#message').text("Congratulations, X! You've won!")
-		} else if (checkIfPlayerWon('Y')){
-			$('#message').text("Congratulations, O! You've won!")
-		} else ($(this).text(document.turn))
-			switchTurn(); 
-	})
+			if(checkIfPlayerWon('X')){
+					$('#message').text("Congratulations, X! You've won!")
+					}
+				else if(document.turn == "X"){
+					document.turn = "O"; 
+					$('#message').text("It's " + document.turn + "'s turn");
+				};
+			else {
+				if(document.turn == "O"){
+					if(checkIfPlayerWon('O')){
+						$('#message').text("Congratulations, O! You've won!")
+					}
+				}  else {
+					document.turn = "X"; 
+					$('#message').text("It's " + document.turn + "'s turn");
+				};
+			}
 
+	})	
+
+
+	/*$('.square').on('click', function(event){
+		var squareSelected = $(this);
+
+		if(squareSelected.hasClass('X') || squareSelected.hasClass('O')) {
+			alert("This square has already been selected")
+		} else {
+			if(player === 1 ){
+				squareSelected.addClass('X');
+				if(checkIfPlayerWon('X')){
+					alert('Congrats! Player ' + player + ' has won!')
+				} else {
+				player = 2;
+				}
+			} else {
+				squareSelected.addClass('O')
+				if(checkIfPlayerWon('O')){
+					alert('Congrats! Player ' + player + ' has won!')
+				} else {
+				player = 1;
+				}
+			}
+		}
+	})*/
 
 
 
