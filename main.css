@@ -28,12 +28,12 @@ td {
 	height: 33.33%;
 }
 
-.X::after {
-	content: X;
+.X:after {
+	content: '\0058';
 }
 
-.O {
-	background-color: blue; 
+.O:after {
+	content: '\004F'; 
 }
 
 
