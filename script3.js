@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	var player = 1
+	document.turn = "X";
 
 	$('.square').on('click', function(event){
 		var squareSelected = $(this);
