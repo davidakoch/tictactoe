@@ -28,8 +28,8 @@ td {
 	height: 33.33%;
 }
 
-.X {
-	background-color: red; 
+.X::after {
+	content: X;
 }
 
 .O {
