@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
 	var player = 1
-	document.turn = "X";
+	if(player = 1){
+		$('#message').text("It's Player 1's turn")
+	} 
 
 	$('.square').on('click', function(event){
 		var squareSelected = $(this);
@@ -15,6 +17,8 @@ $(document).ready(function(){
 					$('#message').text('Congrats! Player ' + player + ' has won!')
 				} else {
 				player = 2;
+					//added this text
+					$('#message').text("It's Player 2's turn")
 				}
 			} else {
 				squareSelected.addClass('O')
@@ -22,6 +26,8 @@ $(document).ready(function(){
 					$('#message').text('Congrats! Player ' + player + ' has won!')
 				} else {
 				player = 1;
+				//added this text
+				$('#message').text("It's Player 1's turn")
 				}
 			}
 		}
