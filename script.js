@@ -79,6 +79,6 @@
 		return document.getElementById("s" + number).innerText;
 	}
 
-	function clearBox(number){
-		document.getElementById("s" + number).innerText = "";
-	}
+		function clearBox(number){
+			document.getElementById("s" + number).innerText = "";
+		}
