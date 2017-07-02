@@ -33,6 +33,17 @@ $(document).ready(function(){
 		}
 	})
 
+	/*function clearBox(number){
+		$('#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9,').text(" ");
+	}*/
+
+	$('#startOver').on('click', function(event){
+		console.log("hello");
+		$('#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9').removeClass("X O");
+	});
+
+
+
 	function checkIfPlayerWon(symbol){
 		if($('#s1').hasClass(symbol) && $('#s2').hasClass(symbol) && $('#s3').hasClass(symbol)){
 			return true;
